@@ -1,4 +1,4 @@
-package com.company;
+package server;
 
 import express.Express;
 
