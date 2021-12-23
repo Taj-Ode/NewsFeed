@@ -2,6 +2,8 @@ package server;
 
 import express.Express;
 
+import java.nio.file.Paths;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -10,7 +12,10 @@ public class Main {
         Express app = new Express();
 
 
-        app.listen(3000);
-        System.out.println("Server started on port 3000");
+        app.listen(4000);
+        System.out.println("Server started on port 4000");
+
+        app.useStatic(Paths.get("src/www"));
+
     }
 }
